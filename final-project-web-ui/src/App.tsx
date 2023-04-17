@@ -8,6 +8,13 @@ import logo from './logo.svg';
 import './App.css';
 import SignUp from './signup';
 
+
+import { Provider } from "react-redux";
+import store from "./store";
+import showResults from "./showResults";
+import WizardForm from "./WizardForm";
+import Values from './values';
+
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
@@ -25,11 +32,16 @@ export default function App() {
     <Container maxWidth="sm">
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Material UI Create React App example in TypeScript
+          CS 375 - Spring 2023 - Sample UI Application
         </Typography>
         <ProTip />
-        <SignUp></SignUp>
-        <Copyright />
+
+        <h2>Wizard Example</h2>
+        <Provider store={store}>
+          <WizardForm onSubmit={showResults} />
+          <Values form="wizard" />
+        </Provider>
+
       </Box>
     </Container>
   );

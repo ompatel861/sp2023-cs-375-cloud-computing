@@ -15,8 +15,8 @@ export default function ProTip() {
   return (
     <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
       <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} />
-      Pro tip: See more <Link href="https://mui.com/getting-started/templates/">templates</Link> in
-      the MUI documentation.
+      This is a sample UI application that will be deployed to AWS Cloud Platform. This application simulates a wizard form that has multiple steps available in it.
+      As you step through the application, you will see the JSON displayed below.
     </Typography>
   );
 }
