@@ -21,5 +21,4 @@ bucket=`aws s3api list-buckets --query "Buckets[].Name" | grep s3bucket | tr -d 
 
 FILE_PATH="/home/ec2-user/environment/resources/public_policy.json"
 FILE_PATH_2="/home/ec2-user/environment/resources/permissions.py"
-FILE_PATH_3="/home/ec2-user/environment/resources/setup.sh"
 
